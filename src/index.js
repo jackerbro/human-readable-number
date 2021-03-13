@@ -1,8 +1,8 @@
 module.exports = function toReadable (number) {
   if(number === 0) return "zero";
-  var num = number.toString().split('').reverse();
-  var result ="";
-  var length = num.length;
+  let num = number.toString().split('').reverse();
+  let result ="";
+  let length = num.length;
   
   for(var i = length; i > 0; i -= 1) {
     switch(i) {
@@ -73,7 +73,7 @@ module.exports = function toReadable (number) {
   return result.trim();
 };
 
-var firstOrderNumbers = {
+let firstOrderNumbers = {
   0: "",
   1: "one",
   2: "two",
@@ -85,7 +85,7 @@ var firstOrderNumbers = {
   8: "eight",
   9: "nine"
 };
-var tenNumbers = {
+let tenNumbers = {
   0: "ten",
   1: "eleven",
   2: "twelve",
@@ -98,7 +98,7 @@ var tenNumbers = {
   9: "nineteen"
 };
 
-var secondOrderNumbers = {
+let secondOrderNumbers = {
   2: "twenty",
   3: "thirty",
   4: "forty",
@@ -109,7 +109,7 @@ var secondOrderNumbers = {
   9: "ninety"
 };
 
-var bigNumbers = {
+let bigNumbers = {
   3: "hundred",
   4: "thousand",
   7: "million",
